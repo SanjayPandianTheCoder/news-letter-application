@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: cadetblue;
+}
+
+.button{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
+    font-size: 1rem;
+    padding: 15px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    color: darkslategrey;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: darkslategray;
+    color: antiquewhite;
+    transition: 0.5s;
+}
+
+#newsLetter{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    width: 450px;
+    position: fixed;
+    z-index: 5;
+    padding: 40px 40px;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+
+#newsLetter.active{
+    visibility: visible;
+    top: 50%;
+    transition: 0.5s;
+}
+
+#newsLetter h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkslategray;
+}
+
+#newsLetter p{
+    text-align: center;
+    margin-bottom: 7px;
+    color: darkslategray;
+    font-weight: 700;
+}
+
+#newsLetter .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#newsLetter .box input{
+    width: 100%;
+    border: 2px solid darkslategray;
+    height: 2rem;
+    padding: 8px;
+    color: cadetblue;
+}
+
+#newsLetter .box button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    color: antiquewhite;
+    border: none;
+}
+
+#newsLetter .box button:hover{
+    background-color: antiquewhite;
+    color: cadetblue;
+    border: 2px solid cadetblue;
+}
+
+#newsLetter a{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+}
